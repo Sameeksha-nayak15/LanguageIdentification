@@ -1,9 +1,8 @@
 import streamlit as st
 import requests
-from langdetect import detect, DetectorFactory
 
-# Fix random seed for consistent langdetect results
-DetectorFactory.seed = 0
+
+
 
 # --- Page Config ---
 st.set_page_config(
