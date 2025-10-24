@@ -19,7 +19,7 @@ import os
 # =====================================================
 
 PIPELINE_PATH =  "../saved_models/language_pipeline.joblib"
-LANGUAGE_CSV =  "../language_codes.csv" # <-- must exist
+LANGUAGE_CSV =  "../saved_models/language_codes.csv" # <-- must exist
 
 # =====================================================
 # 🚀 FastAPI App Initialization
