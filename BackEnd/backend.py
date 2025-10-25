@@ -153,7 +153,7 @@ async def predict_language(data: TextInput):
 # =====================================================
 # 🏁 ROOT ENDPOINT
 # =====================================================
-@app.post("/predict")
+@app.get("/")
 async def root():
     return {"message": "✅ Language Identification API is running!"}
 
@@ -161,4 +161,6 @@ async def root():
 # ▶️ MAIN ENTRY POINT
 # =====================================================
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+    import uvicorn
+    port = int(os.environ.get("PORT", 10000))  # Use PORT env var if deployed
+    uvicorn.run(app, host="0.0.0.0", port=port)
