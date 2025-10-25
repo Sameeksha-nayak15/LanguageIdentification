@@ -72,7 +72,7 @@ if st.button("🔍 Identify Language"):
         try:
             with st.spinner("Analyzing language..."):
                 response = requests.post(
-                    "https://languageidentification.onrender.com/",  # 👈 Your backend API endpoint
+                    "https://languageidentification.onrender.com/predict",  # 👈 Your backend API endpoint
                     json={"text": cleaned_input},
                     headers={"Content-Type": "application/json; charset=utf-8"}
                 )
