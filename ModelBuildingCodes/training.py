@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # -------------------------------
 # CONFIGURATION
 # -------------------------------
-DATA_CSV = "output_clean.csv"
+DATA_CSV = "C:\Users\Hp\OneDrive\Desktop\LanguageIdentification\output_clean.csv"
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
 NGRAM_RANGE = (1, 4)    # Character-level n-grams (reduced from 5)
