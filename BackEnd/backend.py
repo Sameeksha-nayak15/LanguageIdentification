@@ -153,7 +153,7 @@ async def predict_language(data: TextInput):
 # =====================================================
 # 🏁 ROOT ENDPOINT
 # =====================================================
-@app.get("/")
+@app.post("/predict")
 async def root():
     return {"message": "✅ Language Identification API is running!"}
 
